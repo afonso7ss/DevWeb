@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programação</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #f8f9fa;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .btn {
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <div class="container">
+            <h1>Cursos de Programação</h1>
+        </div>
+    </header>
+    <nav class="py-2">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselCursos" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCursos" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCursos" data-slide-to="1"></li>
+            <li data-target="#carouselCursos" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="html_css.jpg" class="d-block w-100" alt="Curso de HTML e CSS">
+            </div>
+            <div class="carousel-item">
+                <img src="javascript.jpg" class="d-block w-100" alt="Curso de JavaScript">
+            </div>
+            <div class="carousel-item">
+                <img src="python.jpg" class="d-block w-100" alt="Curso de Python">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselCursos" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCursos" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="html_css.jpg" class="card-img-top" alt="Curso de HTML e CSS">
+                    <div class="card-body">
+                        <h2 class="card-title">Curso de HTML e CSS</h2>
+                        <p class="card-text">Este curso aborda os fundamentos de HTML e CSS para criação de websites.</p>
+                        <a href="#" class="btn btn-primary btn-block">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="javascript.jpg" class="card-img-top" alt="Curso de JavaScript">
+                    <div class="card-body">
+                        <h2 class="card-title">Curso de JavaScript</h2>
+                        <p class="card-text">Este curso cobre os conceitos básicos e avançados de JavaScript para desenvolvimento web.</p>
+                        <a href="#" class="btn btn-success btn-block">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="python.jpg" class="card-img-top" alt="Curso de Python">
+                    <div class="card-body">
+                        <h2 class="card-title">Curso de Python</h2>
+                        <p class="card-text">Este curso aborda programação em Python para análise de dados e desenvolvimento web.</p>
+                        <a href="#" class="btn btn-danger btn-block">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais cursos aqui -->
+        </div>
+    </div>
+    <footer class="py-4">
+        <div class="container text-center text-white">
+            <p>&copy; 2024 Cursos de Programação</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
